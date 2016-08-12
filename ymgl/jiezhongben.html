@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="../js/mui.min.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/style-h5.css" />
+    <link rel="stylesheet" type="text/css" href="../css/contect.css"/>
+
+    <script src="../js/xuxka.js"></script>
+  
+</head>
+<body>
+	<header class="headertop">
+	    <a class="header-closebtn mui-action-back"><img src="../image/back_x.png" alt="" /></a>
+	    <h1 class="header-title">接种本</h1>
+	</header>
+	<div class="content-content">
+		<div class="mtabs" id="tabs">
+		  <ul class="mhead">
+		    <li><span>已接种</span></li>
+		    <li><span>接种计划</span></li>
+		  </ul>
+		  <div class="mcontent">
+		    <ul>
+		    	<li>
+		      	    <div class="yijizym">
+		            	<div class="yijizym-name"></div>
+		            	<div class="yijizym-time"></div>
+		            	<div class="yijizym-addresss"><img src="../image/ic_gps_x.png" alt="" /><span></span></div>
+		           </div>
+		     </li>
+		    </ul>
+		    <ul>
+		       <li>
+		      	<div class="jiezhongjihua">
+			         <div class="jiezhjh-title clearfix"><span></span><span></span></div>
+			         <div class="jiezhjh-time clearfix"><span></span><span></span></div>
+			         <div class="jiezhjh-name"><div class="jiezhjh-ncontent clearfix"><span></span><div><span></span><span></span></div></div></div>
+				</div>    
+		      </li>
+		    </ul>
+		  </div>
+		</div>
+    </div>
+</body>
+<script>
+	document.addEventListener('DOMContentLoaded',function(){
+  //use mTabs
+	  new mTabs({
+	    mtab: '#tabs',
+	    mhead: '#tabs .mhead',
+	    mcontent: '#tabs .mcontent'
+	  });
+},false);
+</script>
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/jiezhongben.js"></script>
+</html>

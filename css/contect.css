@@ -1,0 +1,225 @@
+/*接种查询*/
+.jzcx-input{height:44px;width:100%;background:#ccc;padding-top:7px;margin-bottom:20px;}
+.jzcx-input .address{display:block;width:96%;height:30px;background:#fff;margin:0 auto;border-radius:3px;color:#999;font-size: 1.4rem;text-align:center;}
+.jzcx-map{width:92%;height:364px;margin:0 auto;}
+.jzcx-info{width:100%;padding:0 2.7%;color:#383838;font-size: 1.4rem;margin-bottom:40px;line-height: 1.5;margin-top:20px;}
+.jzcx-info .jzdname span:first-child{float: left;}
+.jzcx-info .jzdname span:nth-child(2){float: left;}
+.jzcx-info .jzdname span:last-child{float: right;}
+.jzcx-btns{width:67%;height:40px;background:#ffb243;border-radius: 10px;font-size: 1.8rem;color:#fff;text-align:center;line-height: 40px;margin:0 auto;margin-bottom:20px;}
+/*接种查询*/
+/*设置接种点*/
+.quhaoinfo{line-height:1.5;height:100px;background:#8aceff;margin-bottom:11px;position:relative;}
+.quhaoinfo .quhaoinfo-touxing{background:blue;border-radius:50%;width:60px;height:60px;position:absolute;top:15px;left:15px;}
+.quhaoinfo .quhaoinfo-name{position:absolute;left:29px;bottom:4px;font-size: 1.6rem;color:#323232;height:16px;line-height: 16px;}
+.quhaoinfo .quhaoinfo-info{color:#fff;font-size:1.6rem;position:absolute;top:17px;left:85px;}
+.quhaoinfo .quhaoinfo-info .quhao img{width:15px;height:16px;margin-right:11px;}
+.jiezhongdian{padding:10px 2.7%;color:#5B5B5B;font-size: 1.5rem;background:#fff;margin-bottom:10px;line-height: 1.5;}
+.jiezhongdian .jiezhongdian-btn{padding-top:10px;width:100%;}
+.jiezhongdian .jiezhongdian-btn div{display:block;background:#FFB243;height:24px;width:80px;text-align: center;line-height:24px;font-size:1.6rem;color:#fff;border-radius: 8px;margin:0 0 4px 73%;}
+.morenjzd{height:auto;width:100%;background:#fff;margin-bottom:10px;}
+.morenjzd .morenjzd-title{font-size: 1.6rem;color:#3E3E3E;border:1px solid #f4f4f4;height:30px;line-height: 30px;padding-left:10px}
+.morenjzd .morenjzd-info{font-size: 1.5rem;color:#6C6C6C;padding:10px;line-height: 1.5;}
+.chyongjzd{background:#fff;}
+.chyongjzd .chyongjzd-name{height:50px;width:100%;padding:0 10px;font-size: 1.5rem;color:#818181;line-height: 50px;}
+.chyongjzd .morenjzd-title{font-size: 1.6rem;color:#3E3E3E;border-bottom:1px solid #f4f4f4;height:30px;line-height: 30px;padding-left:10px;}
+.jzcx-btn{width:67%;height:40px;background:#ffb243;border-radius:10px;font-size: 1.8rem;color:#fff;text-align:center;line-height: 40px;margin:0 auto;margin-bottom:20px;margin-top:60px;}
+/*设置接种点*/
+/*接种本*/
+.yijizym{height:50px;position:relative;color:#3B3B3B;font-size: 1.5rem;border-bottom:1px solid #f4f4f4;}
+.yijizym .yijizym-name{width:55%;position:absolute;top:18px;left:2.7%;white-space:nowrap;text-overflow:ellipsis;overflow:hidden;height:15px;line-height:15px;}
+.yijizym .yijizym-time{position:absolute;top:18px;right:2.7%;height:15px;line-height:15px;}
+.yijizym .yijizym-addresss{position:absolute;bottom:2px;right:2.7%;font-size:1.2rem;color:#8F8F8F;height:12px;line-height: 12px;}
+.yijizym .yijizym-addresss img{width:7px;height:11px;}
+.clearfix:after,.clearfix:before{content:"";display: block;}
+.clearfix:after{clear:both;}
+.mtabs {width:100%;overflow:hidden;height:100%;}
+.mhead {height:35px;-webkit-tap-highlight-color:rgba(0,0,0,0);border-bottom:1px solid #F4F4F4;}
+.mhead li {position:relative;font-size:1.5rem;text-align:center;float:left;width:50%;height:35px;line-height:38px;color:#565656;}
+.mhead li.current span{padding-bottom:4px;color:#5ABCEB;border-bottom:1px solid #5ABCEB;}
+.mcontent {width:100%;overflow:hidden;}
+.mcontent ul {width:100%;float:left;height:100%;background:#fff}
+.mcontent li {height:100%;padding:0px;min-height:50px;}    
+.jiezhongjihua{background:#fff;}
+.jiezhongjihua .jiezhjh-title{padding:0 2.7%;line-height:20px;width:95%;height:20px;border-radius: 20px;border:1px solid #77C6EC;font-size: 1.5rem;color:#666;margin:0 auto;}
+.jiezhongjihua .jiezhjh-title span:first-child{float:left;}
+.jiezhongjihua .jiezhjh-title span:last-child{float:right;}
+.jiezhongjihua .jiezhjh-time{width:100%;padding:8px 5% 0 5%;font-size: 1.2rem;}
+.jiezhongjihua .jiezhjh-time span:first-child{color:#898989;float:left;}
+.jiezhongjihua .jiezhjh-time span:last-child{color:#898989;float:right;width:30%;height:16px;border-radius: 10px;background:#FFB243;text-align:center;line-height: 16px;color:#FFFAF4;display:none;}
+.jiezhongjihua .jiezhjh-name{width:100%;padding:0 5%;}
+.jiezhongjihua .jiezhjh-name .jiezhjh-ncontent{padding:10px 0;border-bottom:1px solid #f4f4f4;font-size:1.5rem;color:#383838;}
+.jiezhongjihua .jiezhjh-name .jiezhjh-ncontent span{float:left;}
+.jiezhongjihua .jiezhjh-name .jiezhjh-ncontent div{float:right;}
+.jiezhongjihua .jiezhjh-name .jiezhjh-ncontent div span:first-child{margin-right:10px}
+/*接种本*/
+/*取号*/
+.header-right{float:right;font-size: 1.4rem;color:#A5A5A5;margin-top:15px;margin-right:15px;}
+.quhaoinfo{line-height:1.5;height:100px;background:#8aceff;margin-bottom:11px;position:relative;}
+.quhaoinfo .quhaoinfo-touxing{border:1px solid red;border-radius:50%;width:60px;height:60px;position:absolute;top:15px;left:15px;}
+.quhaoinfo .quhaoinfo-name{position:absolute;left:29px;bottom:4px;font-size: 1.6rem;color:#323232;height:16px;line-height: 16px;}
+.quhaoinfo .quhaoinfo-info{color:#fff;font-size:1.6rem;position:absolute;top:17px;left:85px;}
+.quhaoinfo .quhaoinfo-info .quhao img{width:15px;height:16px;margin-right:11px;}
+.quhaojiez{padding:10px 4%;font-size: 1.4rem;color:#4A4A4A;background:#fff;}
+.quhaojiez .jzwsy{margin-bottom:8px;font-size: 1.4rem;}
+.qherweim{width:100%;height:auto;background:#fff;margin-top:10px;}
+.qherweim .qherweim-shuomin{padding:10px 4%;font-size:1.6rem;color:#505050;}
+.qherweim .qherweim-erweim{height:auto;}
+.qherweim .qherweim-erweim img{display: block;width:50%;height:60px;border:1px solid red;margin:0 auto;}
+.qherweim .qherweim-erweim span{margin:0 auto;color:#6B6B6B;display:block;text-align: center;letter-spacing:8px;font-size: 1.5rem;}
+.qherweim .qherweim-qupiao{width:100%;text-align: center;font-size: 1.5rem;color:#515151;}
+.qherweim .qherweim-zizhuqudn{padding-left:67%;color:#999;font-size: 1.5rem;margin-top:10px;padding-bottom:36px;}
+.quhaoxuzhi{width:100%;height:auto;color:#333;padding:10px 4%;}
+.quhaoxuzhi h3{font-size: 1.6rem;margin-bottom:8px;color:#323232;}
+.quhaoxuzhi p{font-size: 1.4rem;line-height: 1.5;}
+/*取号*/
+/*吴宝宝*/
+.babyinfoes{margin-bottom:10px;width:100%;height:100px;background:#8aceff;padding:8px 4%;position:relative;box-sizing: border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+.babyinfoes .babyinfo-touxiang{position:relative;width:64px;height:64px;border-radius: 50%;border:1px solid #22a3ff;padding-top:1px;overflow: hidden;}
+
+.babyinfoes .babyinfo-touxiang .babyinfo-img{width:60px;height:60px;border-radius: 50%;margin:0 auto;}
+.babyinfoes .babyinfo-touxiang .babyinfo-img img{width:60px;height:60px;}
+.babyinfoes .babyinfo-name{position:absolute;left:0;right:0;top:24px;width:96px;height:32px;color:#36393B;font-size:1.6rem;margin:auto;text-align: center;line-height:initial}
+.babyinfoes .babyinfo-more{position:absolute;width:21px;top:15px;right:4%;}
+.babyinfo-more img{width:21px;}
+.babyjzhong{height:auto;width:100%;background:#FFF;border-bottom:1px solid #f4f4f4;}
+.babyjzhong .babyjzhong-yuyue{float:left;width:50%;height:80px;border-right:1px solid #F4F4F4;box-sizing: border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+.babyjzhong .babyjzhong-yuyue .image{width:22px;height:24px;display: block;margin:0 auto;margin-top:19px;}
+.babyjzhong .babyjzhong-yuyue .image img{height:24px;display: block;margin:0 auto;}
+.babyjzhong .babyjzhong-yuyue .images{width:22px;height:22px;display: block;margin:0 auto;margin-top:19px;}
+.babyjzhong .babyjzhong-yuyue .images img{height:22px;display: block;margin:0 auto;}
+
+.babyjzhong .babyjzhong-yuyue .wenzi{font-size:1.6rem;color:#494949;width:100%;height:auto;text-align: center;margin-top:4px;}
+.babyjzhong .babyjzhong-yuyue .wenzi #yuyue{font-size:1.2rem;color:#48B6EA;}
+.babyjzhong .babyjzhong-jzben{float:right;width:50%;height:80px;}
+.babyjzhong .babyjzhong-jzben .image{width:22px;height:24px;display: block;margin:0 auto;margin-top:19px;}
+.babyjzhong .babyjzhong-jzben .image img{height:24px;display: block;margin:0 auto;}
+.babyjzhong .babyjzhong-jzben .wenzi{font-size:1.6rem;color:#494949;width:100%;height:auto;text-align: center;margin-top:4px;}
+.rexianphone{width:92%;height:50px;padding:13px 0;background:#fff;border-radius:10px;margin:0 auto;margin-top:20px;font-size: 1.6rem;color:#333;}
+.rexianphone .rx-phone{width:150px;height:100%;margin:0 auto;position:relative;}
+.rexianphone img{width:24px;height:24px;position:absolute;top:0;left:0;}
+.rexianphone span{position:absolute;left:36px;top:1px;}
+.jzjilus{height:auto;width:100%;padding-top:20px;box-sizing: border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+.jzjilus .jzjilu-tops{width:100%;padding:0 2.7% 10px 2.7%;box-sizing:border-box;}
+.jzjilus .jzjilu-tops span{float:left;font-size:1.4rem;color:#505050;}
+.jzjilus .jzjilu-tops a{float:right;font-size:1.4rem;color:#505050;}
+.jzjilus .jzjilu-lists{height:50px;width:100%;border-bottom:1px solid #f4f4f4;border-top:1px solid #f4f4f4;background:#fff;line-height:50px;font-size: 1.5rem;padding:0 4%;box-sizing: border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;color:#474747;}
+
+/*吴宝宝*/
+/*详情*/
+.xqinfo{width:100%;height:auto;padding:4% 15px;background:#fff;margin-bottom:11px;}
+.xqinfo .xqinfo-img{float:left;width:50px;height:50px;overflow:hidden;border-radius: 50%;background:blue;margin-right:10px;}
+.xqinfo .xqinfo-img img{width:50px;height:50px;}
+.xqinfo .xqinfo-shuomin{line-height: 1.5;margin-top:6px;float:left;color:#333;font-size: 1.6rem;}
+.jiezhinfo{padding:10px 4%;color:#333;font-size: 1.4rem;background:#fff;margin-bottom:10px;line-height: 1.5;}
+.benciyimiao{padding-top:10px;width:100%;height:auto;}
+.benciyimiao span{display:block;padding-left:2.7%;margin-bottom:10px;font-size: 1.4rem;color:#333;}
+.benciyimiao .xctjsj{color:#3F3F3F;font-size:1.4rem;padding-top:10px;padding-right:2.7%;text-align: right;}
+
+/*详情*/
+/*疫苗管理*/
+.babyinfo{width:100%;height:116px;background:#8aceff;padding:16px 4%;position:relative;}
+.babyinfo .babyinfo-touxiang{position:relative;width:64px;height:64px;border-radius: 50%;border:1px solid #22a3ff;margin:0 auto;padding-top:1px;}
+.babyinfo .babyinfo-touxiang .babyinfo-img{width:60px;height:60px;border-radius: 50%;margin:0 auto;overflow:hidden}
+.babyinfo .babyinfo-touxiang .babyinfo-img img{width:60px;height:60px;margin:0 auto;}
+.babyinfo .babyinfo-touxiang .babyinfo-tubiao{width:15px;height:13px;position:absolute;top:45px;left:47px;}
+.babyinfo .babyinfo-touxiang .babyinfo-tubiao img{width:15px;height:13px;}
+.babyinfo .babyinfo-touxiang .babyinfo-name{position:absolute;left:76px;top:24px;font-size:1.6rem;width:150%;color:#3F4951;}
+.babyinfo .babyinfo-time{margin-top:7px;color:#fff;width:100%;height:16px;text-align: center;line-height:16px;font-size: 1.6rem;}
+.babyinfo .babyinfo-time span{font-size: 2.0rem;color:#FBE400;}
+.babyinfo .babyinfo-more{position:absolute;width:21px;top:15px;right:4%;}
+.babyinfo-more img{width:21px;}
+.babytime{height:auto;width:100%;background:#52b6ff;margin-bottom:6px;color:#fff;font-size: 1.4rem;}
+.babytime .babyinfo-bleft{float:left;width:50%;height:25px;text-align: center;line-height: 25px;}
+.babytime .babyinfo-bright{float:right;width:50%;height:25px;text-align: center;border-left:1px solid #f4f4f4;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;line-height: 25px;}
+.babyjzhong{height:auto;width:100%;background:#FFF;border-bottom:1px solid #f4f4f4;} 
+.babyjzhong .babyjzhong-yuyue{float:left;width:50%;height:80px;border-right:1px solid #F4F4F4;box-sizing: border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+.babyjzhong .babyjzhong-yuyue .image{width:22px;height:24px;display: block;margin:0 auto;margin-top:19px;}
+.babyjzhong .babyjzhong-yuyue .image img{height:24px;display: block;margin:0 auto;}
+.babyjzhong .babyjzhong-yuyue .images{width:22px;height:22px;display: block;margin:0 auto;margin-top:19px;}
+.babyjzhong .babyjzhong-yuyue .images img{height:22px;display: block;margin:0 auto;}
+.babyjzhong .babyjzhong-yuyue .wenzi{font-size:1.6rem;color:#6A6A6A;width:100%;height:auto;text-align: center;margin-top:4px;}
+.babyjzhong .babyjzhong-yuyue .wenzi #yuyue{font-size:1.2rem;color:#48B6EA;}
+.babyjzhong .babyjzhong-jzben{float:right;width:50%;height:80px;}
+.babyjzhong .babyjzhong-jzben .image{width:22px;height:24px;display: block;margin:0 auto;margin-top:19px;}
+.babyjzhong .babyjzhong-jzben .image img{height:24px;display: block;margin:0 auto;}
+.babyjzhong .babyjzhong-jzben .wenzi{font-size:1.6rem;color:#6a6a6a;width:100%;height:auto;text-align: center;margin-top:4px;}
+.rexianphone{width:92%;height:50px;padding:13px 0;background:#fff;border-radius:10px;margin:0 auto;margin-top:20px;font-size: 1.6rem;color:#333;}
+.rexianphone .rx-phone{width:150px;height:100%;margin:0 auto;position:relative;}
+.rexianphone img{width:24px;height:24px;position:absolute;top:0;left:0;}
+.rexianphone span{position:absolute;left:36px;top:1px;}
+.jzjilu{height:auto;width:100%;padding-top:20px;} 
+.jzjilu .jzjilu-top{width:100%;padding:0 2.7% 10px 2.7%;color:#575757;}
+.jzjilu .jzjilu-top span{float:left;font-size:1.4rem;}
+.jzjilu .jzjilu-top a{float:right;font-size:1.4rem;color:#575757;}
+
+/*疫苗管理*/
+/*有宝宝*/
+.babyinfos{width:100%;height:100px;background:#fff;padding:8px 4% 0 4%;position:relative;}
+.babyinfos .babyinfo-content{height:100%;width:100%;border-bottom:1px solid #F4F4F4;box-sizing: border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+.babyinfos .babyinfo-touxiang{position:relative;width:64px;height:64px;border-radius: 50%;border:1px solid #22a3ff;padding-top:1px;}
+.babyinfos .babyinfo-touxiang .babyinfo-img{width:60px;height:60px;border-radius: 50%;background:blue;margin:0 auto;}
+.babyinfos .babyinfo-touxiang .babyinfo-tubiao{width:15px;height:13px;position:absolute;top:71px;left:6px;}
+.babyinfos .babyinfo-touxiang .babyinfo-tubiao img{width:15px;height:13px;}
+.babyinfos .babyinfo-touxiang .babyinfo-name{position:absolute;left:26px;top:69px;color:#626262;font-size:1.6rem;width:32px;}
+.babyinfos .babyinfo-time{margin-top:7px;color:#fff;width:100%;height:16px;text-align: center;line-height:16px;font-size: 1.6rem;}
+.babyinfos .babyinfo-time span{font-size: 1.8rem;color:#FBE400;}
+.babyinfos .babyinfo-more{position:absolute;width:21px;top:15px;right:4%;}
+.babyinfo-more img{width:21px;}
+.babyinfos .babyinfo-tianqi{font-size: 1.6rem;color:#535353;position:absolute;top:19px;left:0;right:0;margin:auto;text-align: center;}
+.babytimes{height:40px;background:#fff;width:100%;margin-bottom:11px;color:#505050;text-align: center;line-height: 40px;font-size: 1.6rem;}
+.babytimes img{width:19px;height:15px;margin-right:11px;}
+
+.babyjzhong{height:auto;width:100%;background:#FFF;border-bottom:1px solid #f4f4f4;}
+.babyjzhong .babyjzhong-yuyue{float:left;width:50%;height:80px;border-right:1px solid #F4F4F4;box-sizing: border-box;}
+.babyjzhong .babyjzhong-yuyue .image{width:22px;height:24px;display: block;margin:0 auto;margin-top:19px;}
+.babyjzhong .babyjzhong-yuyue .image img{height:24px;display: block;margin:0 auto;}
+.babyjzhong .babyjzhong-yuyue .images{width:22px;height:22px;display: block;margin:0 auto;margin-top:19px;}
+.babyjzhong .babyjzhong-yuyue .images img{height:22px;display: block;margin:0 auto;}
+.babyjzhong .babyjzhong-yuyue .wenzi{font-size:1.6rem;color:#494949;width:100%;height:auto;text-align: center;margin-top:4px;}
+.babyjzhong .babyjzhong-yuyue .wenzi #yuyue{font-size:1.2rem;color:#48B6EA;}
+.babyjzhong .babyjzhong-jzben{float:right;width:50%;height:80px;}
+.babyjzhong .babyjzhong-jzben .image{width:22px;height:24px;display: block;margin:0 auto;margin-top:19px;}
+.babyjzhong .babyjzhong-jzben .image img{height:24px;display: block;margin:0 auto;}
+.babyjzhong .babyjzhong-jzben .wenzi{font-size:1.6rem;color:#494949;width:100%;height:auto;text-align: center;margin-top:4px;}
+.rexianphone{width:92%;height:50px;padding:13px 0;background:#fff;border-radius:10px;margin:0 auto;margin-top:20px;font-size: 1.6rem;color:#333;}
+.rexianphone .rx-phone{width:150px;height:100%;margin:0 auto;position:relative;}
+.rexianphone img{width:24px;height:24px;position:absolute;top:0;left:0;}
+.rexianphone span{position:absolute;left:36px;top:1px;color:#555555;}
+.jzjilu{height:auto;width:100%;padding-top:20px;}
+.jzjilu .jzjilu-top{width:100%;padding:0 2.7% 10px 2.7%;}
+.jzjilu .jzjilu-top span{float:left;font-size:1.4rem;color:#454545;}
+.jzjilu .jzjilu-top a{float:right;font-size:1.4rem;color:#454545;}
+/*有宝宝*/
+/*预约接种*/
+.jiezhonginfo{height:50px;width:100%;padding:0 4%;background:#fff;margin-bottom:10px;text-align: center;line-height: 50px;color:#666;font-size: 1.6rem;}
+.jiezhonginfo span:first-child{float:left;}
+.jiezhonginfo span:last-child{float:right;color:#404040;}
+.tijiaoyuyue{width:100%;height:70px;background:#f4f4f4;position:fixed;z-index:99999;bottom:0px;padding-top:10px;}
+.tijiaoyuyue-btn{height:40px;width:250px;margin:0 auto;border-radius: 10px;background:#ffb243;color:#fff;font-size: 1.8rem;text-align: center;line-height: 40px;}
+.jzjilu-list{height:50px;width:100%;border-bottom:1px solid #f4f4f4;background:#fff;position:relative;}
+.jzjilu-list .yimiaoname{position: absolute;top:9px;left:4%;height:15px;font-size:1.5rem;color:#575757;line-height:initial;}
+.jzjilu-list .yimiaocount{position: absolute;bottom:9px;left:4%;height:12px;font-size:1.2rem;color:#ffb548;line-height:initial;}
+.jzjilu-list .ymmianfei{width:75px;height:15px!important;position: absolute;bottom:6px;right:8.5%;border-radius:8px;font-size:1.2rem;color:#48b6ea;}
+.jzjilu-list .ymmianfei2{width:35px;height:15px!important;position: absolute;bottom:17px;right:8.5%;border-radius:8px;font-size:1.2rem;color:#48b6ea;}
+.jzjilu-list .ymmianfei span{display:block;float:right;width:35px;height:15px!important;border:1px solid #48B6EA;border-radius: 8px;text-align: center;line-height:14px;color:#48b6ea;font-size:1.2rem;}
+.jzjilu-list .ymmianfei2 span{display:block;float:left;width:35px;height:15px!important;border:1px solid #48B6EA;border-radius: 8px;text-align: center;line-height:14px;color:#48b6ea;font-size:1.2rem;}
+.jzjilu-list .ymmianfei span:first-child{margin-left:5px;}
+.jzjilu-list .ymgenduo{width:7px;height:11px;line-height:11px;position: absolute;bottom:20px;right:2.8%;}
+.jzjilu-list .ymgenduo img{width:7px;height:11px;}
+/*预约接种*/
+/*接种单位*/
+.jiezdanwi-dq{height:50px;width:100%;background:#fff;padding:0 15px;line-height: 50px;margin-top:10px;}
+.jiezdanwi-dq span:first-child{font-size: 1.6rem;color:#717171;float: left;}
+.jiezdanwi-dq span:last-child{color:#363636;font-size: 1.6rem;float: right;margin-right:5px;}
+.jiezdanwi-dq img{width:7px;height;11px;float:right;line-height: 50px;margin-top:17px;}
+.jiezdanwi-dd{height:50px;width:100%;background:#fff;padding:0 15px;line-height: 50px;margin-bottom:10px;border-top:1px solid #f4f4f4;}
+.jiezdanwi-dd span:first-child{font-size: 1.6rem;color:#717171;float: left;}
+.jiezdanwi-dd span:last-child{color:#363636;font-size: 1.6rem;float: right;margin-right:5px;}
+.yiyuaninfo{height:60px;background:#fff;font-size:1.4rem;border-bottom:1px solid #f4f4f4;padding:10px 15px 7px 15px;}
+.yiyuaninfo-name img{width:10px;height:14px;margin-right:5px;}
+.yiyuaninfo-dizhi{color:#818181;}
+/*接种单位*/
+/*疫苗Mark*/
+
+/*疫苗Mark*/

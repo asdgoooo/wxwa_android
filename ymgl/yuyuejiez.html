@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    
+    <title></title>
+    <script src="../js/mui.min.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/style-h5.css" />
+     <link rel="stylesheet" type="text/css" href="../css/contect.css"/>
+ </head>
+ <style>
+ .mui-fullscreen{top:154px;}
+ .mui-control-item{font-size: 1.4rem;color:#ABABAB!important;border:1px solid #ABABAB!important;border-radius: 20px;height:30px!important;width:98px!important;padding:0!important;line-height: 30px!important;text-align: center;}
+ .muss-top{height:50px!important;background:#fff;padding-top:10px;border-top:1px solid #f4f4f4!important;}
+ .mui-scroll>.mui-active{background:#48b6ea!important;color:#fff!important;border:none!important;}
+ .mui-table-view-cell{width:40%;height:80px;border:1px solid #48B6EA;border-radius: 10px;float:left;margin:10px 5%!important;background:#fff;padding:9px!important;}
+ /*.nuss-content{top:50px!important;}*/
+ input[type=radio]{left:0;right:0!important;width:19px!important;height:19px!important;margin:auto;bottom:9px;top:auto!important;}
+ input[type=radio]:before{font-size: 19px!important;}
+ .yutime-all{width:100%;height:30px;line-height: 1.2;text-align: center;font-size: 1.6rem;}
+ .yutime-all span{display: block;}
+ .nuss-yushiijan{bottom:70px!important;}
+ </style>
+<body>
+	<header class="headertop">
+	    <a class="header-closebtn mui-action-back"><img src="../image/back_x.png" alt="" /></a>
+	    <h1 class="header-title">预约接种</h1>
+	</header>
+	<div class="content-content">
+	    <div class="jiezbaby jiezhonginfo"><span>接种宝宝</span><span id="yyname">丁丁</span></div>
+	    <div class="jiezdanwei jiezhonginfo"><span>接种单位</span><span id="yuyuehs">浙江省中医院</span></div>
+	  
+	    <div id="slider" class="mui-slider mui-fullscreen">
+				<div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted muss-top">
+					<div class="mui-scroll yysj-box">
+						<a class="mui-control-item yysj-box-item" href="#item1mobile">	
+						</a>
+					</div>
+				</div>
+				<div class="mui-slider-group nuss-content">
+					<div id="item1mobile" class="mui-slider-item mui-control-content yysj-boxcontent">
+						<div id="scroll1" class="mui-scroll-wrapper nuss-yushiijan">
+							<div class="mui-scroll">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell mui-radio">
+										<input id="yytime" name="radio" type="radio" checked>
+										<div class="yutime-all"><span>1</span><span></span></div>
+									</li>
+									
+								</ul>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+	</div>
+	<div class="tijiaoyuyue">
+	   <div class="tijiaoyuyue-btn">提交预约</div>
+	</div>
+	
+	
+	
+	<!--<script src="../js/mui.pullToRefresh.js"></script>-->
+	<!--<script src="../js/mui.pullToRefresh.material.js"></script>-->
+	<script>
+			mui.init();
+			(function($) {
+				//阻尼系数
+				var deceleration = mui.os.ios?0.003:0.0009;
+				$('.mui-scroll-wrapper').scroll({
+					bounce: false,
+					indicators: true, //是否显示滚动条
+					deceleration:deceleration,
+				});
+			})(mui);
+           // var scroller = new IScroll('#sliderSegmentedControl', { tap: true });
+		</script>
+</body> 
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/yuyuejiezhong.js"></script>
+</html>

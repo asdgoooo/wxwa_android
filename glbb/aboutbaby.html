@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="../js/mui.min.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=A4749739227af1618f7b0d1b588c0e85"></script>
+    <script src="../js/jquery-3.1.0.min.js"></script> 
+    <script src="../js/jquery.validate-1.13.1.js"></script>
+	<script src="../js/mui.picker.min.js"></script>
+	<script src="../js/dtpicker.js"></script>
+    <script type="text/javascript" src="../js/aboutbaby.js"></script>
+    <script type="text/javascript" src="../js/dialog.js"></script>
+	<script type="text/javascript" src="../js/mobile-select-area.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css" />
+    <link rel="stylesheet" href="../css/style-h5.css" />
+    <link rel="stylesheet" href="../css/group.css" /> 
+    <link rel="stylesheet" href="../css/dialog.css" />
+    <link rel="stylesheet" href="../css/mobile-select-area.css" />
+
+</head>
+<body>
+	<header class="headertop">
+	    <a class="header-closebtn mui-action-back"><img src="../image/back_x.png" alt="" /></a>
+	    <h1 class="header-title">关联宝宝</h1>
+	</header>
+	<div class="content-content">
+		<div class="shuoming"><p>欢迎加入微象大家庭！关联宝宝后我们将为您提供更优质，便捷的服务。目前已经开通关联的城市包括：杭州、宁波、温州、绍兴、湖州、嘉兴、金华、衢州、台州、丽水、金三。</p></div>
+		<div class="container">
+			<form action="#" id="inform">
+				<input type="text" id="address" placeholder="自动定位中..."/>
+
+				<script>
+					var selectArea = new MobileSelectArea();
+					selectArea.init({trigger:'#address',data:'data.json',level:2});
+				</script>
+
+				<div id="allmap" style="display:none"></div>
+				<div id="DtPicker" data-options='{"type":"date"}'>
+                    <div type="text" id="shengri" name="Babybirth" data-date-format="yyyy-mm-dd" >请输入宝宝生日</div>
+                </div>
+				<div class="shaoma"><input type="text" name="Addbarcode" id="shaoma" placeholder="请输入或扫描接种证上的条码号" /></div>
+                <!--<button id="barscan" type="button" class="icon-barcode button scan"> </button>-->
+				<input type="button" id="button"  value="下一步"/>
+			</form>
+			<!--<div class="shoudong"><img src="../image/ic_exchange_x.png" alt="" /><span>切换关联方式，<a href="javascript:;" id="shdtianj">手动添加(未完成)</a></span></div>-->
+		</div>
+	</div>
+	
+	<div class="markall"></div>
+	<div class="mark-content">
+		<div class="close-btn"><img src="../image/cancel_delete@3x.png" alt="" /></div>
+		<div class="content-con">
+			<div class="content-container"><span>儿童编码</span><span id="child_code">123456789076666</span></div>
+			<div class="content-container"><span>条码号</span><span id="bar_code">789076666</span></div>
+			<div class="content-container"><span>姓名</span><span id="name_code">张喷</span></div>
+			<div class="content-container"><span>出生日期</span><span id="date_code">2015-09-09</span></div>
+			<div class="content-container"><span>性别</span><span id="sex_code">男</span></div>
+			<div class="content-container2">
+				<span>居住地址</span>
+				<div class="box"><div class="address" id="address_code">中国杭州市滨江区江一村123号</div><div class="shenlve">...</div></div>
+			</div>
+			<div class="content-container"><span>过敏</span><span id="allergy_code">无</span></div>
+			<div class="content-container"><span>出生证号</span><span id="birthid_code">15265916423064784</span></div>
+			<div class="content-container2 container-3">
+				<span>建党单位名</span>
+				<div class="box"><div class="address" id="unit_code">杭州市滨江区妇幼保医院</div><div class="shenlve">...</div></div>
+			</div>
+			<div class="content-btn">确定</div>
+		</div>
+	</div>
+	
+	<div class="mark"><span>未找到该宝宝</span><span>请确认宝宝接种证发放地是否已开通关联功能</span></div>
+
+	<div class="marksucc">请填写正确的宝宝信息</div>
+	
+	<div class="overlay" style="display: none">
+        <div id="interactive" class="overlay__content">
+            <div class="overlay__close">X</div>
+            <video autoplay="true" preload="auto" src></video>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
+
+
+

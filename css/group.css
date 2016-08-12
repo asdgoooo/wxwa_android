@@ -1,0 +1,55 @@
+/*关联宝宝*/
+.shuoming{height:auto;width:100%;padding:7px 2.7%;background:#FFF1DD;box-sizing: border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;}
+.shuoming p{font-size: 1.2rem;color:#524F4C;width:100%;line-height: 1.2rem;}
+.container{width:100%;padding-top:15px;}
+.container form input{box-sizing: border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;font-size:1.4rem;}
+.container form #address{width:80%;height:50px;display: block;margin:0 auto;border-radius: 8px;background:#fff;border:1px solid #e7e7e7 inset;margin-bottom:10px;padding-left:5%;}
+.container form #shengri{width:80%;height:50px;display: block;margin:0 auto;border-radius: 8px;background:#fff;border:1px solid #e7e7e7 inset;margin-bottom:10px;padding-left:5%;line-height:50px;font-size: 1.4rem;}
+.container form .shaoma{width:80%;height:50px;display: block;margin:0 auto;border-radius: 8px;background:#fff;border:1px solid #e7e7e7 inset;margin-bottom:30px;position:relative;}
+.container form .shaoma input{width:83%;height:100%;padding-left:5%;border-radius: 8px;}
+.container form .shaoma img{height:21px;width:20px;position:absolute;top:15px;right:15px;}
+.container form #button{height:40px;width:67%;border-radius: 1.0rem;background:#FFB243;color:#FFECD1;display:block;margin:0 auto;}
+.container .shoudong{width:100%;height:50px;color:#86CCEC;padding-top:15px;text-align: center;}
+.container .shoudong img{width:4%;height:auto;margin:0 auto;color:#86CCEC;margin-right:7px;}
+.container .shoudong span{font-size: 1.4rem;}
+.container .shoudong a{font-size: 1.4rem;color:#86CCEC;text-decoration: underline;}
+/*关联宝宝*/
+/*确定信息*/
+.markall{position:fixed;z-index: 99;background: #000;opacity: 0.3;width:100%;height:100%;top:0;left:0;display: none;}
+.mark-content{position:absolute;top:0;left:0;z-index: 100;width:100%;height:100%;display: none;}
+.mark-content .close-btn{width:24px;height:24px;border-radius: 50%;position:absolute;right:6%;top:73px;overflow:hidden;}
+.mark-content .close-btn img{width:24px;height:24px;}
+.mark-content .content-con{height:500px;padding:0 15px;position:absolute;top:127px;margin:auto;left:0;right:0;background:#fff;width:81%;height:auto;background:#fff;border-radius: 8px;margin-bottom:40px;}
+.mark-content .content-con .content-container{font-size:1.5rem;height:45px;border-bottom:1px solid #f4f4f4;line-height: 45px;color:#757575;}
+.mark-content .content-con .content-container span:first-child{float: left;}
+.mark-content .content-con .content-container span:last-child{float: right;}
+.content-btn{margin:0 auto;margin-top:25px;margin-bottom:20px;width:82%;height:40px;background: #FFB243;border-radius: 10px;color:#fff;font-size: 1.8rem;line-height: 40px;text-align: center;}
+.mark-content .content-con .content-container2{font-size:1.5rem;height:45px;border-bottom:1px solid #f4f4f4;line-height: 45px;color:#757575;}
+.mark-content .content-con .container-3{border-bottom:1px solid #f9f9f9;color:#B2B2B2;}
+.mark-content .content-con .content-container2 span{float: left;}
+.mark-content .content-con .content-container2 .box{float:right;height:45px;width:147px;overflow: hidden;position:relative;}
+.mark-content .content-con .content-container2 .box .address{position:absolute;right:0;top:0;white-space: nowrap;height:45px;line-height: 45px;}
+.mark-content .content-con .content-container2 .box .shenlve{position:absolute;left:-1px;top:0;white-space: nowrap;width:15px;height:100%;text-align: right;background: #fff;}
+/*确定信息*/
+/*手动添加*/
+.containers{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box; width:100%;height:auto;padding-left:4%;background:#fff;}
+.containers .name{width:100%;height:50px;border-bottom:1px solid #F4F4F4;line-height: 50px;color:#666;font-size: 1.8rem;box-sizing: border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box; padding-right:4%;}
+.containers .name:last-child{border:0}
+.containers .name span:first-child{float: left;}
+.containers .name span:last-child{float: right;color:#333;font-size: 1.7rem;}
+.container-name input{width:50%;float:right;margin:0;padding:0;text-align: right;height:100%;}
+ .containers-btn{width:83%;height:40px;text-align:center;line-height: 40px;color:#fff;font-size: 1.6rem;background:#FFB243;border-radius: 10px;margin:0 auto;margin-top:50px;}
+ .shoudongs{width:100%;height:50px;color:#86CCEC;padding-top:15px;text-align: center;}
+ .shoudongs img{width:4%;height:auto;margin:0 auto;color:#86CCEC;margin-right:7px;}
+ .shoudongs span{font-size: 1.4rem;}
+ .shoudongs a{font-size: 1.4rem;color:#86CCEC;text-decoration: underline;}
+/*手动添加*/
+/*弹出信息*/
+.marksucc{position:fixed;z-index: 99;background: #000;text-align:center;opacity: 0.8;color:#D5D5D5;font-size: 1.6rem;margin:0 auto;top:261px;left:0;right:0;width:200px;height:50px;line-height:50px;border-radius: 10px;display: none;}
+.markfail{position:fixed;z-index: 99;padding:14px 31px;background: #000;text-align:center;opacity: 0.8;color:#D5D5D5;font-size: 1.6rem;margin:0 auto;top:244px;left:0;right:0;width:185px;height:60px;line-height:18px;border-radius: 10px;}
+/*弹出信息*/
+/*未找到信息*/
+.mark{position:fixed;z-index: 99;background: #000;text-align:center;opacity: 0.8;color:#D5D5D5;font-size: 1.5rem;margin:0 auto;top:244px;left:0;right:0;width:240px;height:75px;border-radius: 10px;padding:10px 0;display: none;}
+.mark span:first-child{display:block;margin-bottom:11px;height:16px;line-height: 16px;font-size: 1.6rem;}
+.mark span:last-child{display:block;font-size: 1.4rem;padding:0 42px;line-height: 15px;}
+/*未找到信息*/

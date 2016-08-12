@@ -1,0 +1,22 @@
+body,html,ul,li,p{margin:0;padding:0;}
+a,img{text-decoration: none;}
+html{font-size:62.5%;}
+body{font-size:1.4rem;background:#48B6EA;}
+input{border:none;outline:none;}
+input:active{border: none;}
+.headertop{height:44px;position:relative;}
+.header-closebtn{float: left;width:21px;height:21px;padding-top:13px;margin-left:4%;}
+.header-title{width:40px;font-size:1.7rem;line-height:44px;position:absolute;top:0;bottom:0;right:0;left:0;margin:auto;color:#fff;text-align:center;}
+.header-closebtn img{display: block;width:100%;height:auto;}
+.weiicon{height:auto;width:100%;padding-top:34px;padding-bottom:55px;}
+.weiicon .weiicon-icom{display:block;width:21%;height:auto;margin:auto;}
+#loginform .username,#loginform .yanzhengma{padding:0px 4%;background:#75C8EF;position:relative;}
+#loginform .username input{height:45px;font-size:1.6rem;background:#75C8EF;width:100%;border-bottom:1px solid #B2E0F6;color:#E3F3FA;}
+#loginform .username img{position:absolute;bottom:15px;right:4%;display: block;width:14px;height:14px;}
+#loginform .yanzhengma input:first-child{height:45px;font-size:1.6rem;background:#75C8EF;width:69%;color:#E3F3FA;}
+#loginform .yanzhengma input:last-child{position:absolute;right:4%;height:45px;font-size:1.6rem;background:#75C8EF;width:85px;color:#E3F3FA;}
+#loginform .xuanze{height:15px;position:relative;} 
+#loginform .xuanze img{width:12px;height:12px;position:absolute;top:12px;left:15px;}
+#loginform .xuanze span{font-size: 1.4rem;color:#E3F3FA;position:absolute;top:10px;left:30px;}
+#loginform .xuanze a{font-size: 1.4rem;color:#E3F3FA;text-decoration: underline;}
+#loginform #submits{display:block;height:40px;width:67%;margin:0 auto;border-radius: 20px;background:#FFB243;font-size:1.6rem;text-align: center;line-height:40px;color:#FFF9F2;margin-top:33px;margin-bottom:40px;}

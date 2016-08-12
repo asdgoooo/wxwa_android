@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="../js/mui.min.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/style-h5.css" />
+    <link rel="stylesheet" type="text/css" href="../css/contect.css"/>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=A4749739227af1618f7b0d1b588c0e85"></script>
+</head>
+<body>
+	<header class="headertop">
+	    <a class="header-closebtn mui-action-back"><img src="../image/back_x.png" alt="" /></a>
+	    <h1 class="header-title">疫苗管理</h1>
+	</header>
+    <div class="content-content">
+        <div class="babyinfo"> 
+        	<div class="babyinfo-touxiang">
+        		<div class="babyinfo-img">
+        			<img src="" alt="" />
+        		</div>
+        		<div class="babyinfo-tubiao"><img src="../image/authentication_x.png" alt="" /></div>
+        		<div class="babyinfo-name">叮当</div>
+        	</div>
+        	
+        	<div class="babyinfo-time">距离下次接种还有<span id="tianshu">22</span>天</div>
+        	<a href="#popover" id="openPopover" class="babyinfo-more "><img src="../image/more_w@3x.png" alt="" /></a>
+        </div>
+        <div class="babytime clearfix">
+        	<div class="babyinfo-bleft "></div>
+        	<div class="babyinfo-bright">16/21℃阵雨转中到大雨</div>
+        </div>
+    
+        <div class="babyjzhong clearfix">
+        	<a href="javascript:;" class="babyjzhong-yuyue"><div class="images"><img src="../image/ic_vaccination@3x.png" alt="" /></div><div class="wenzi">预约接种</div></a>
+        	<a href="javascript:;" class="babyjzhong-jzben"><div class="image"><img src="../image/ic_log@3x.png" alt="" /></div><div class="wenzi">接种本</div></a>
+        </div>
+        <div class="babyjzhong clearfix">
+        	<a href="javascript:;" class="babyjzhong-yuyue"><div class="image"><img src="../image/ic_query@3x.png" alt="" /></div><div class="wenzi">接种点查询</div></a>
+        	<a href="javascript:;" class="babyjzhong-jzben"><div class="image"><img src="../image/ic_knowledge@3x.png" alt="" /></div><div class="wenzi">疫苗知识</div></a>
+        </div>
+        <!--<a href="tel:400-0085-4895"><div class="rexianphone"><div class="rx-phone"><img src="../image/phone_x.png" alt="" /><span>400-0085-4895</span></div></div></a>-->
+        <div class="jzjilu">
+        	<div class="jzjilu-top clearfix">
+        		<span>近期接种记录</span><a href="#">更多</a>
+        	</div>
+        	<ul class="jzjilu-list">
+        		<li class="yimiaoname"></li>
+        		<li class="yimiaocount"></li>
+        		<li class="ymmianfei"><span></span><span></span></li>
+        		<li class="ymgenduo"><img src="../image/more_m.png" alt="" /></li>
+        	</ul>
+        </div>
+        
+    </div>
+  <div id="allmap" style="display:none;"></div>
+ <style type="text/css">
+    #popover{height:100%;max-height:372px;width:100%;top:auto!important;bottom:0;left:0!important;background:#fff;}
+    #tianjia{height:117px;width:100%;padding-top:47px;position:absolute;bottom:0;}
+    .mui-popover-arrow{display:none;}
+    .mui-scroll-wrapper{bottom:117px;}
+    .tianjia-btn{width:178px;height:50px;border-radius:40px;padding-top:8px;border:1px solid #48b6ea;margin:0 auto;}
+    .tianjia-btn img{display:block;height:35px;width:35px;margin-left:15px;float:left;}
+    .tianjia-btn span{float:left;margin-top:8px;font-size: 1.5rem;color:#48B6EA;margin-left:19px;}
+    .ycbabyinfo{height:83px;width:100%;padding:10px 20px;}
+    .ycbabyinfo-touxiang img{height:60px;width:60px;}
+    .mui-table-view-cell{height:83px;background:#fff;}
+    .ycbabyinfo-touxiang{width:60px;height:60px;border-radius:50%;overflow:hidden;margin:0 auto;}
+    .ycbabyinfo-img{width:64px;height:64px;float:left;padding-top:1px;border-radius: 50%;border:1px solid #48B6EA;position:relative;}
+    .mui-table-view-cell:after{left:35px;right:35px;}
+    #ycbabyinfo-sex{height:15px;width:15px;position:absolute;bottom:0;right:0;z-index:44444;}
+    .ycbabyinfo-base{height:64px;width:auto;margin-left:20px;padding-top:8px;font-size:1.6rem;position:relative;float:left;}
+    .ycbabyinfo-base img{width:15px;height:15px;}
+    .ycbabyinfo-baseinfo{margin-bottom:10px;color:#333;}
+    .ycbabyinfo-basebir{color:#666;}
+    .ycbabyinfo-btn{float:right;height:35px;width:35px;margin-top:20px;}
+    .ycbabyinfo-btn img{height:20px;width:20px;}
+    </style>
+    <div id="popover" class="mui-popover">
+    	<div class="mui-scroll-wrapper">
+    	    <div class="mui-scroll">
+    		    <ul class="mui-table-view babyinfoall">
+    		    	<li class="mui-table-view-cell ycbabyinfo">
+		    			<div class="ycbabyinfo-img">
+		    				<div class="ycbabyinfo-touxiang">
+		    					<img src="" alt="" />
+		    				</div>
+		    				<img src="../image/ic_male@3x.png" id="ycbabyinfo-sex" alt="" />
+		    			</div>
+		    			<div class="ycbabyinfo-base">
+		    				<div class="ycbabyinfo-baseinfo"><span>张静</span><img src="../image/ic_vip_selected@3x.png" alt="" /></div>
+		    				<div class="ycbabyinfo-basebir">3个月</div>
+		    			</div>
+		    			<div class="ycbabyinfo-btn"><img src="../image/ic_selected_tick@3x.png" alt="" /></div>
+    		    	</li>
+    		  </ul>
+    		</div>
+    	</div>
+    	<div id="tianjia"><div class="tianjia-btn"><img src="../image/add_03.png" alt="" /><span id="tjbaby">添加宝宝</span></div></div>
+    </div>
+    <script>
+    	mui.init();
+      	document.addEventListener("plusready",function(){
+      		mui('.mui-scroll-wrapper').scroll();
+      	})
+    </script>
+</body>
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/ymiaoguanli.js"></script>
+</html>

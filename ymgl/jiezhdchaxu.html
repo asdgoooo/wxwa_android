@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="../js/mui.min.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../css/style-h5.css" />
+    <link rel="stylesheet" type="text/css" href="../css/contect.css"/>
+    <style>
+    	#allmap{height:364px;}
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=pQ359DEaT9DalSChsAG7nV2aW2Uyqywe"></script>
+</head>
+<body>
+	<header class="headertop">
+	    <a class="header-closebtn mui-action-back"><img src="../image/back_x.png" alt="" /></a>
+	    <h1 class="header-title">选择卫生院</h1>
+	</header>
+    <div class="content-content">
+        <div class="jzcx-input" id="r-result">
+        	<input type="text" id="suggestId" class="address" value="杭州市滨江区"  />
+        </div>
+        <div class="jzcx-map" id="allmap"></div>
+        <div id="searchResultPanel" style="border:1px solid #C0C0C0;width:150px;height:auto; display:none;"></div>
+        <div class="jzcx-info clearfix">
+          <div class="jzdname clearfix"><span>接种点名称：</span><span>杭州市丁桥社区卫生院</span><span>距离1.3公里</span></div>
+          <div class="jzdadrs clearfix"><span>接种点地址：</span><span>杭州市江干区丁桥环丁路356号</span></div>
+          <div class="jzdtel clearfix"><span>接种点电话：</span><span>123456789</span></div>
+        </div>
+        <div class="jzcx-btns">设置接种点</div>
+    </div>
+</body>
+<script src="../js/jquery-3.1.0.min.js"></script>
+<script src="../js/shzhweshy.js"></script>  
+</html>
+

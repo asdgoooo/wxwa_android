@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <script src="../js/jquery-3.1.0.min.js"></script>
+    <script src="../js/mui.min.js"></script>
+    <script src="../js/mui.picker.min.js"></script>
+    <script src="../js/sdtianjia.js"></script>
+    <link href="../css/mui.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css" />
+    <link rel="stylesheet" href="../css/style-h5.css" />
+    <link rel="stylesheet" href="../css/group.css" />
+    <link rel="stylesheet" type="text/css" href="../css/app.css" />
+
+    <!--<link rel="stylesheet" href="../css/sdtianjia.css" />-->
+</head>
+<body>
+	<header class="headertop">
+	    <a class="header-closebtn mui-action-back"><img src="../image/back_x.png" alt="" /></a>
+	    <h1 class="header-title">手动添加</h1>
+	</header>
+    <div class="content-content">
+		<div class="containers">
+            <div class="name container-name"><span>姓名</span><input type="text" id="sdname"/></div>
+			<div class="name container-sex"><span>性别</span><a href="#picture"><span id="sex">男</span></a></div>
+			<div class="name container-bir" data-options='{"type":"date"}' id="DtPicker"><span>出生日期</span><span id="result">2015-12-04</span></div>
+			<div class="name container-address"><span>接种点</span><span id="choicejz">请选择接种点</span></div>
+		</div>
+		<div class="containers-btn">添加</div>
+		<div class="shoudongs"><img src="../image/ic_exchange_x.png" alt="" /><span>切换关联方式，<a href="#" id="aboutbaby">关联宝宝</a></span></div>
+    </div>
+
+    <div id="picture" class="mui-popover mui-popover-action mui-popover-bottom">
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell">
+                <a href="#">男</a>
+            </li>
+            <li class="mui-table-view-cell">
+                <a href="#">女</a>
+            </li>
+        </ul>
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell">
+                <a href="#picture"><b>取消</b></a>
+            </li>
+        </ul>
+    </div>
+
+
+</body>
+</html>
